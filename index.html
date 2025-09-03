@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio - MCA Student</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Sidebar -->
+  <aside class="sidebar" id="sidebar">
+    <div class="profile">
+      <img src="images/profile.jpg" alt="My Photo">
+      <h2>Your Name</h2>
+      <p>MCA Student | Aspiring Developer</p>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#about" onclick="toggleSidebar()">About</a></li>
+        <li><a href="#skills" onclick="toggleSidebar()">Skills</a></li>
+        <li><a href="#projects" onclick="toggleSidebar()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleSidebar()">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Resume Download Button -->
+    <div class="resume-btn">
+      <a href="resume.pdf" download>📄 Download Resume</a>
+    </div>
+  </aside>
+
+  <!-- Hamburger Menu -->
+  <div class="hamburger" id="hamburger" onclick="toggleSidebar()">☰</div>
+
+  <!-- Main Content -->
+  <main class="content">
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Hello! I am <strong>VIJAYAKUMAR YN</strong>, an MCA student passionate about software development, web technologies, and problem-solving. I am looking for opportunities to apply my knowledge in real-world projects and grow as a software professional.</p>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>Programming: Java, Python, C++</li>
+        <li>Web: HTML, CSS, JavaScript, React</li>
+        <li>Database: MySQL, MongoDB</li>
+        <li>Tools: Git, VS Code</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project">
+        <h3>Human Following Robot</h3>
+        <p>Arduino-based robot that follows human movement using sensors.</p>
+      </div>
+      <div class="project">
+        <h3>Stroke Prediction System</h3>
+        <p>Machine learning project that predicts stroke risk using health data.</p>
+      </div>
+      <div class="project">
+        <h3>Wildlife Rescue Website</h3>
+        <p>A PHP-MySQL web platform to support wildlife rescue operations.</p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="vijayyagati@gmail.com">vijayyagati@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/vijaya-kumar-y-n-6987b62bb" target="_blank">linkedin.com/in/vijay</a></p>
+      <p>GitHub: <a href="https://github.com/vijayakumaryn" target="_blank">github.com/vijay</a></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
